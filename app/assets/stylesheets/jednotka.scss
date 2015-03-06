@@ -1,0 +1,23 @@
+@import "jednotka/bootstrap/bootstrap.min";
+
+@import "jednotka/jednotka_green";
+//customize contrast color
+//$contrast: #01a9e0;
+//@import "jednotka/jednotka";
+
+.style-switcher {
+    top: 150px;
+}
+.style-switcher {
+    width: 200px;
+    background-color: #434955;
+    border-right: 1px solid #353B47;
+    border-bottom: 1px solid #353B47;
+    z-index: 9999;
+    position: fixed;
+    top: 100px;
+    left: -200px;
+    text-align: left;
+    border-bottom-right-radius: 5px;
+    transition: left 300ms ease 0s;
+}

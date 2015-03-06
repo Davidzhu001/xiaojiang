@@ -1,0 +1,1 @@
+'css_dir = "../app/assets/stylesheets/"'

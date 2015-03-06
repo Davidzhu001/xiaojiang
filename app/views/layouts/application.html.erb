@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xiaojiang</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body class='homepage'>
+  <div id="wrapper">
+    <header id="header">
+    	<%= render 'layouts/header' %>
+    </header>
+    <div id='main' role='main'>
+     	<%= yield %>
+     	<%= render 'layouts/sider' %>
+    </div>
+    <footer id="footer">
+    	<%= render 'layouts/footer' %>
+    </footer>
+  </div>
+  <!-- / javascripts -->
+</body>
+</html>
