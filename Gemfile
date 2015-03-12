@@ -47,3 +47,5 @@ end
 gem "compass-rails"
 gem "font-awesome-rails"
 
+gem 'devise'
+
