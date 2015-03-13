@@ -49,3 +49,4 @@ gem "font-awesome-rails"
 
 gem 'devise'
 
+gem "auto_html"

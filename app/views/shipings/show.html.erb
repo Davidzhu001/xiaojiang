@@ -1,0 +1,35 @@
+<div id='main-content'>
+  <div class='container'>
+		<p id="notice"><%= notice %></p>
+
+
+
+		<div class='row'>
+		  <div class='col-sm-12'>
+		    <div class='page-header page-header-with-icon no-mg-t'>
+		      <i class='fa-icon-tag'></i>
+		      <h2>
+		         <strong>Title:</strong><%= @shiping.title %>
+		      </h2>
+		    </div>
+		    <div class='row'>
+		      <div class='col-sm-12'>
+		        <p class='lead lead-xs text-center'><%= @shiping.description %></p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<p>
+		  <strong>Dizhi:</strong>
+		  <%= @shiping.dizhi %>
+		</p>
+
+		<p>
+		  <strong>User:</strong>
+		  <%= @shiping.user %>
+		</p>
+
+		<%= link_to 'Edit', edit_shiping_path(@shiping) %> |
+		<%= link_to 'Back', shipings_path %>
+	</div>
+</div>

@@ -41,8 +41,8 @@ body {
 #wrapper {
   background-repeat: no-repeat;
   background-position: center 0;
-  background-image: image-url("http://pixabay.com/get/e0894c33a83e86d42955/1425600309/stars-610670_1280.jpg?direct");
-  @include image-2x("http://pixabay.com/get/55ad4e2e8fbd6b2c0526/1425595917/paper-182220_1280.jpg?direct", 1920px, 535px);
+  background-image: image-url("http://pixabay.com/get/49bb6ff3029ef9daf5b8/1426218433/stars-345902_1280.jpg?direct");
+  @include image-2x("http://pixabay.com/get/b3758b17529f19485afa/1426218163/colorful-641793_1280.jpg?direct", 1920px, 535px);
 }
 
 #main-content {

@@ -1,0 +1,45 @@
+<div id='main-content'>
+  <div class='container'>
+    <%= link_to 'New Shiping', new_shiping_path %>
+
+
+    <% @shipings.each do |shiping| %>
+    <div class="text-boxes">
+      <div class="row text-box text-box-title-above">
+        <div class="col-sm-12">
+          <h2 class="title">
+            <%= shiping.title %>
+          </h2>
+          <div class="toolbar">
+            <a class="btn btn-link" href="#">
+              <i class="fa-icon-calendar-empty"></i>
+              <span><%= shiping.created_at %></span>
+            </a>
+            <a class="btn btn-link" href="#">
+              <i class="fa-icon-user"></i>
+              <span><%= shiping.user_id %></span>
+            </a>
+            <a class="btn btn-link" href="#">
+              <i class="fa-icon-comments"></i>
+              <span>Comments count</span>
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <a href="#">
+                <img class="img-responsive center-block img-rounded-half" alt="..." width="189" height="129" src="http://pixabay.com/get/1f0cf9d824f025397353/1426219816/train-527849_1280.jpg?direct">
+              </a>
+            </div>
+            <div class="col-sm-9">
+              <p><%= shiping.description %></p>
+
+              <%= link_to '查看视频', shiping %>
+            </div>
+          </div>
+          <hr class="hr-half">
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>

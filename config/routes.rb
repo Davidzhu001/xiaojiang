@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :shipings
+
   devise_for :users
   get 'home/home'
 
